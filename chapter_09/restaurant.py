@@ -19,21 +19,20 @@ class Restaurant():
     def open_restaurant(self):
         print("Open_restaurant")
 
+# restaurant = Restaurant("Jasper's restaurant", 'Lu')
+# restaurant2 = Restaurant("Alice's restaurant", 'Lu')
+# restaurant3 = Restaurant("Jack's restaurant", 'Lu')
+# print("Restaurant_name:" + restaurant.restaurant_name)
+# print("Cuisine_type:" + restaurant.cuisine_type)
 
-restaurant = Restaurant("Jasper's restaurant", 'Lu')
-restaurant2 = Restaurant("Alice's restaurant", 'Lu')
-restaurant3 = Restaurant("Jack's restaurant", 'Lu')
-print("Restaurant_name:" + restaurant.restaurant_name)
-print("Cuisine_type:" + restaurant.cuisine_type)
-
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
-restaurant2.describe_restaurant()
-restaurant3.describe_restaurant()
-print("Number_served:" + str(restaurant.number_served))
-restaurant.number_served = 10000000
-print("Number_served:" + str(restaurant.number_served))
-restaurant.set_number_served(20000000)
-print("Number_served:" + str(restaurant.number_served))
-restaurant.increment_number_served(10000)
-print("Number_served:" + str(restaurant.number_served))
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
+# restaurant2.describe_restaurant()
+# restaurant3.describe_restaurant()
+# print("Number_served:" + str(restaurant.number_served))
+# restaurant.number_served = 10000000
+# print("Number_served:" + str(restaurant.number_served))
+# restaurant.set_number_served(20000000)
+# print("Number_served:" + str(restaurant.number_served))
+# restaurant.increment_number_served(10000)
+# print("Number_served:" + str(restaurant.number_served))
