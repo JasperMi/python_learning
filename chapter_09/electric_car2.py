@@ -31,6 +31,11 @@ class Battery():
         """初始化电瓶的属性"""
         self.battery_size = battery_size
 
+    def upgrade_battery(self):
+        """电瓶升级"""
+        if self.battery_size != 85:
+            self.battery_size = 85
+
     def describe_battery(self):
         """打印一条描述电瓶容量的消息"""
         print("This car has a " + str(self.battery_size) + "-kWh battery.")
@@ -63,4 +68,6 @@ my_tesla = ElectricCar2('tesla', 'model s', 2016)
 
 print(my_tesla.get_descriptive_name())
 my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
 my_tesla.battery.get_range()
