@@ -1,10 +1,11 @@
+from chapter_09.privileges import Privileges
 from chapter_09.user import User
 
 
 class Admin(User):
-    def __init__(self, first_name, last_name, gender, privileges):
+    def __init__(self, first_name, last_name, gender):
         super().__init__(first_name, last_name, gender)
-        self.privileges = privileges
+        self.privileges = Privileges()
 
     def show_privileges(self):
         print("Here are all the privileges:")
@@ -12,6 +13,5 @@ class Admin(User):
             print(privilege)
 
 
-privileges = ['can add post', 'can delete post', 'can ban user']
-admin = Admin('Jack', 'Frank', 'male', privileges)
-admin.show_privileges()
+admin = Admin('Jack', 'Frank', 'male')
+admin.privileges.show_privileges()
