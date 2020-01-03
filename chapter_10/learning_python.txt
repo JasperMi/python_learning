@@ -1,0 +1,2 @@
+In Python you can finish a web project.
+In Python you can finish a game.
