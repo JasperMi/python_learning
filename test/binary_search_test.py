@@ -1,3 +1,4 @@
+# 二分查找
 def binary_search(numbers, search_number):
     low = 0
     high = len(numbers) - 1
